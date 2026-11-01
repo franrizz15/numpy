@@ -1661,8 +1661,8 @@ class HermiteE(ABCPolyBase):
         and `window` are equal, which is the default.
         Otherwise, the coefficients are with respect to the variable obtained
         by mapping ``x`` from `domain` to `window`, as is the case for
-        polynomials returned by ``HermiteE.fit``. Use ``p.convert().coef``
-        to get the HermiteE coefficients with respect to ``x``.
+        polynomials returned by ``HermiteE.fit``. Use ``p.convert()``
+        to get the equivalent HermiteE series with respect to ``x``.
     domain : (2,) array_like, optional
         Domain to use. The interval ``[domain[0], domain[1]]`` is mapped
         to the interval ``[window[0], window[1]]`` by shifting and scaling.
